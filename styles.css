@@ -1,11 +1,50 @@
+/* .color-theme-orange {
+    background-color: rgb(243, 168, 59);
+}
+
+.color-theme-red {
+    color: rgb(235, 50, 35);
+} */
+
 .header {
     background-color: red;
 }
 
+.section-cards {
+    min-height: 50vh;
+}
+
 .background-image {
     background-image: url("placeholder.jpg");
+    min-height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+}
+.background-image1{
+    background-image: url("dq1.jpg");
+    min-height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-image2 {
+    background-image: url("dq2.jpeg");
+    min-height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-image3 {
+    background-image: url("dq3.png");
+    min-height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer {
