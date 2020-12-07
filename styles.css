@@ -1,0 +1,13 @@
+.header {
+    background-color: red;
+}
+
+.background-image {
+    background-image: url("placeholder.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.footer {
+    background-color: red;
+}
