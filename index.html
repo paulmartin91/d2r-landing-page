@@ -44,17 +44,17 @@
             </div>
             <!-- social links -->
             <div class="col-sm-2 d-flex align-items-center justify-content-between mr-3">
-                <a href="#"><img class="invert active-icon" width="20px" height="20px" src="facebook.png"></a>
-                <a href="#"><img class="invert active-icon" width="20px" height="20px" src="insta.png"></a>
-                <a href="#"><img class="invert active-icon" width="20px" height="20px" src="pintrest.png"></a>
-                <a href="#"><img class="invert active-icon" width="20px" height="20px" src="whatsapp.png"></a>
+                <a href="#"><img class="invert active-icon icon" src="facebook.png"></a>
+                <a href="#"><img class="invert active-icon icon" src="insta.png"></a>
+                <a href="#"><img class="invert active-icon icon" src="pintrest.png"></a>
+                <a href="#"><img class="invert active-icon icon" src="whatsapp.png"></a>
             </div>
         </div>
     </nav>
 
-    <div class="background-image-all background-image"></div>
+    <div id="about" class="background-image-all background-image"></div>
 
-    <div id="about" class="container-fluid box section-cards py-5">
+    <div class="container-fluid box section-cards p-5">
         <div class="row justify-content-md-center ">
             <div class="col">
                 <h1>What is D2R?</h1>
@@ -75,13 +75,19 @@
         <div class="row justify-content-center">
             <div class="col-md-5">
                 <h1>Keep up</h1> 
-                <p>Get the latest D2R news and keep up to date with our progress on Kickstarter!</p>
-                <form action="/action_page.php" class="col-xs-4" width="500px">
-                    <div class="form-group">
+                <p>Get the latest D2R news and keep up to date with our progress on Kickstarter</p>
+                <!-- <form action="#" class="col-xs-4 form-inline" width="500px">
                         <label for="email">Email address:</label>
                         <input type="email" class="form-control" id="email">
+                    <div className="input-group-append">
+                        <button type="button" class="btn btn-primary">Submit</button>
                     </div>
-                    <button type="button" class="btn btn-primary">Submit</button>
+                </form> -->
+                <form class="input-group mb-3">
+                    <input class="form-control" placeholder="email address" required >
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">Sign me up!</button>
+                    </div>
                 </form>
             </div>
 
@@ -90,51 +96,73 @@
 
     <div class="background-image-all background-image2"></div>
 
-    <div id="blog" class="container-fluid py-5 box section-cards">
-        <div class="container justify-content-md-center mt-5">
-            <div class="col">
-                <h1>What we're up to now</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
+    <div id="blog" class="container-fluid p-5 box section-cards">
+        <div class="container justify-content-md-center">
+            <h1>What we're up to now</h1>
+            <div class="row blog-all">
+                <div class="col main-blog-holder">
+                    <h5 id="main-blog-title" class="p-3">TITLE</h5>
+                    <p id="main-blog-content" class="p-3"></p>
+                </div>
+                <div id="sub-blog-tabs" class="col sub-blog-holder">
+                </div>
             </div>
         </div>
     </div> 
 
     <div class="background-image-all background-image3"></div>
 
-    <div id="contact" class="container-fluid section-cards py-5">
+    <!-- <div id="contact" class="container-fluid section-cards py-5">
         <div class="container justify-content-md-center mt-5">
             <div class="col">
                 <h1>Got any ideas?</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="background-image-small background-image4"></div>
+    <!-- <div class="background-image-small background-image4"></div> -->
 
     <!-- Footer -->
-    <footer class="page-footer font-small teal pt-4">
-        <div class="container-fluid text-center text-md-left">
-        <div class="row">
-            <div class="col-md-6 mt-md-0 mt-3">
-            <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-                repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-                harum esse fugiat. Itaque, culpa?</p>
+    <footer class="container-fluid page-footer">
+
+        <div class="container p-5">
+            <div class="row">
+                <div class="col">
+                    <h5 class="text-uppercase font-weight-bold">Wanna get in touch with D2R?</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
+                        repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
+                        harum esse fugiat. Itaque, culpa?</p>
+                </div>
+
+                <div class="col-sm-2">
+                    <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
+                    <p>Lorem ipsum dolor sit, amet </p>
+                </div>
+
+                <div class="col-sm-2">
+                    <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
+                    <p>Lorem ipsum dolor sit, amet </p>
+                </div>
             </div>
-            <hr class="clearfix w-100 d-md-none pb-3">
-            <div class="col-md-6 mb-md-0 mb-3">
-            <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
-                commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-                excepturi hic.</p>
+                <hr color="white">
+
+            <div class="row justify-content-between">
+                <p class="pl-3">© 2020 Copyright:
+                    <a href="https://www.penisland.com"> Ronnie Cowl</a>
+                </p>
+                <div class="col-sm-2 d-flex align-items-center justify-content-between mr-3">
+                    <a href="#"><img class="invert active-icon icon" src="facebook.png"></a>
+                    <a href="#"><img class="invert active-icon icon" src="insta.png"></a>
+                    <a href="#"><img class="invert active-icon icon" src="pintrest.png"></a>
+                    <a href="#"><img class="invert active-icon icon" src="whatsapp.png"></a>
+                </div>
             </div>
+            
         </div>
-        </div>
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="https://www.penisland.com"> Ronnie Cowl</a>
-        </div>
+
+
+
     </footer>
 
   <script src="scripts.js"></script>

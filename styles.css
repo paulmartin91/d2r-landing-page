@@ -26,7 +26,8 @@
 } */
 
 .purple-background {
-    background-color: rgb(47, 24, 54);
+    background-color: rgb(67, 24, 54);
+    /* background-color: rgb(47, 24, 54);  <-- original color */
     color: white;
 }
 
@@ -49,6 +50,11 @@ h1, h5 {
 
 .box {
     min-height: 50vh;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
 }
 
 .active-icon:hover {
@@ -92,3 +98,33 @@ h1, h5 {
 .footer {
     background-color: red;
 }
+
+.footer-hr {
+    color: white;
+    /* margin: 0, 20px, 0, 20px; */
+}
+
+/* Blogs */
+
+.blog-all {
+    border: solid 3px;
+}
+
+.main-blog-holder {
+    border: solid 3px;
+    min-height: 100%;
+    min-width: 80%;
+    padding: 50px;
+}
+
+.sub-blog-holder {
+    overflow: scroll;
+    max-height: 500px;
+}
+
+.sub-blog-tab {
+    border: solid 3px;
+    min-height: 100px;
+    min-width: 100%;
+}
+
