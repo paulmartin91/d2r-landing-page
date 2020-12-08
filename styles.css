@@ -6,45 +6,87 @@
     color: rgb(235, 50, 35);
 } */
 
-.header {
-    background-color: red;
+/* .pride-red {
+
+}
+.pride-orange {
+    
+}
+.pride-yellow {
+    
+}
+.pride-green {
+    
+}
+.pride-blue {
+    
+}
+.pride-purple {
+    
+} */
+
+.purple-background {
+    background-color: rgb(47, 24, 54);
+    color: white;
 }
 
-.section-cards {
+.invert { 
+    filter: invert(90%); 
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h5 {
+    font-family: 'Shrikhand', cursive;
+}
+
+.hidden {
+    opacity: 0;
+    cursor: default;
+}
+
+.box {
     min-height: 50vh;
+}
+
+.active-icon:hover {
+    opacity: 0.8;
+    transition: 0.1s;
+}
+
+.background-image-all {
+    min-height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-small {
+    min-height: 20vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .background-image {
-    background-image: url("placeholder.jpg");
-    min-height: 50vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("dq1.jpg");
 }
 .background-image1{
-    background-image: url("dq1.jpg");
-    min-height: 50vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("dq2.png");
 }
 .background-image2 {
-    background-image: url("dq2.jpeg");
-    min-height: 50vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("dq3.jpg");
 }
 .background-image3 {
-    background-image: url("dq3.png");
-    min-height: 50vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("dq4.png");
+}
+
+.background-image4 {
+    background-image: url("dq3.jpg");
 }
 
 .footer {

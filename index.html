@@ -6,128 +6,136 @@
 
     <title>The HTML5 Herald</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+    <meta name="description" content="Drags2Riches">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Shrikhand&display=swap" rel="stylesheet">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css?v=1.0">
 
 </head>
 
-<body>
+<body class ="purple-background">
     
     <!-- navbar -->
-    <nav class="container-fluid sticky-top py-3 bg-white">
-        <div class="row">
+    <nav class="container-fluid sticky-top purple-background py-3" height="100px">
+        <div class="row align-items-center">
             <!-- logo -->
-            <div class="col-sm-1 navbar-brand ml-2">
-                <img  width="25px" height="25px" src="logo_placeholder.png">
+            <div class="col-sm-1 ml-3 navbar-brand">
+                <img  width="80px" height="auto" src="logo.png">
             </div>
             <!-- nav links -->
             <div class="col">
                 <ul class="nav justify-content-start">
                     <li class="nav-item">
-                        <a class="nav-link active color-theme-red" href="#" >About D2R</a>
+                        <a class="nav-link text-light" href="#about" >About D2R</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Blog</a>
+                        <a class="nav-link text-light" href="#blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Sign up!</a>
+                        <a class="nav-link text-light" href="#signup">Sign up!</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Contact</a>
+                        <a class="nav-link text-light" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
             <!-- social links -->
-            <div class="col-sm-2 mr-3 d-flex align-items-center justify-content-around">
-                <img width="20px" height="20px" src="facebook.png">
-                <img width="20px" height="20px" src="insta.png">
-                <img width="20px" height="20px" src="pintrest.png">
-                <img width="20px" height="20px" src="whatsapp.png">
+            <div class="col-sm-2 d-flex align-items-center justify-content-between mr-3">
+                <a href="#"><img class="invert active-icon" width="20px" height="20px" src="facebook.png"></a>
+                <a href="#"><img class="invert active-icon" width="20px" height="20px" src="insta.png"></a>
+                <a href="#"><img class="invert active-icon" width="20px" height="20px" src="pintrest.png"></a>
+                <a href="#"><img class="invert active-icon" width="20px" height="20px" src="whatsapp.png"></a>
             </div>
         </div>
     </nav>
 
-    <div class="background-image"></div>
+    <div class="background-image-all background-image"></div>
 
-    <div class="container-fluid bg-light mb-5 section-cards">
-        <div class="container justify-content-md-center mt-5">
+    <div id="about" class="container-fluid box section-cards py-5">
+        <div class="row justify-content-md-center ">
             <div class="col">
                 <h1>What is D2R?</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
             </div>
-        </div>
-    </div>
-
-    <div class="background-image1"></div>
-
-    <div class="container-fluid bg-light mb-5 section-cards">
-        <div class="container justify-content-md-center mt-5">
             <div class="col">
-                <h1>Blog</h1>
+                <h1 class="hidden">|</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
             </div>
         </div>
     </div>
 
-    <div class="background-image2"></div>
+    <div class="background-image-all background-image1"></div>
 
-    <div class="container-fluid bg-light mb-5 section-cards">
-        <div class="container justify-content-md-center mt-5">
-            <div class="col">
-                <h1>What is D2R?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
-            </div>
-        </div>
-    </div>
-
-    
-
-    <div class="background-image3"></div>
-    <div class="container-fluid bg-light mt-5">
+    <div id="signup" class="container-fluid box py-5">
         <div class="row justify-content-center">
             <div class="col-md-5">
-                <h1>Sign up!</h1> 
+                <h1>Keep up</h1> 
+                <p>Get the latest D2R news and keep up to date with our progress on Kickstarter!</p>
                 <form action="/action_page.php" class="col-xs-4" width="500px">
                     <div class="form-group">
                         <label for="email">Email address:</label>
                         <input type="email" class="form-control" id="email">
                     </div>
-                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
                 </form>
             </div>
 
         </div>
     </div>
 
+    <div class="background-image-all background-image2"></div>
+
+    <div id="blog" class="container-fluid py-5 box section-cards">
+        <div class="container justify-content-md-center mt-5">
+            <div class="col">
+                <h1>What we're up to now</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
+            </div>
+        </div>
+    </div> 
+
+    <div class="background-image-all background-image3"></div>
+
+    <div id="contact" class="container-fluid section-cards py-5">
+        <div class="container justify-content-md-center mt-5">
+            <div class="col">
+                <h1>Got any ideas?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-image-small background-image4"></div>
+
     <!-- Footer -->
-<footer class="page-footer font-small teal pt-4">
-    <div class="container-fluid text-center text-md-left">
-      <div class="row">
-        <div class="col-md-6 mt-md-0 mt-3">
-          <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-            repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-            harum esse fugiat. Itaque, culpa?</p>
+    <footer class="page-footer font-small teal pt-4">
+        <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
+                repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
+                harum esse fugiat. Itaque, culpa?</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-6 mb-md-0 mb-3">
+            <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
+                commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
+                excepturi hic.</p>
+            </div>
         </div>
-        <hr class="clearfix w-100 d-md-none pb-3">
-        <div class="col-md-6 mb-md-0 mb-3">
-          <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
-            commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-            excepturi hic.</p>
         </div>
-      </div>
-    </div>
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://www.penisland.com"> Ronnie Cowl</a>
-    </div>
-  </footer>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://www.penisland.com"> Ronnie Cowl</a>
+        </div>
+    </footer>
 
   <script src="scripts.js"></script>
   <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>    
