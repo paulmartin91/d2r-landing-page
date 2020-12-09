@@ -25,23 +25,23 @@ $(document).ready(function(){
     });
         
         // API to Integrate Blog
+        var API_KEY = "AIzaSyBWqd6wzwcFgKaxC5BkNLYReXsZZqmUkk8"
+        var bloggerID = "4759296590722902555" //"2399953" // "1330659412086602715" //
 
-        var feed = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fd2r-game.blogspot.com%2Ffeeds%2Fposts%2Fdefault%3Falt%3Drss";
-
-        fetch(feed)
-        .then(response => response.json())
-        .then(data => {
+        fetch(`https://www.googleapis.com/blogger/v3/blogs/${bloggerID}/posts/?key=${API_KEY}`)//, {mode: "no-cors"})
+            .then(response => response.json())
+            .then(data => {
             console.log(data)
             blog_data = data
             data.items.forEach((item, index) => {
                 if (index == 0) {
                     $('#main-blog-title').text(item.title)
-                    $('#main-blog-content').html(item.description)
+                    $('#main-blog-content').html(item.content)
                 }
                 $('#sub-blog-tabs').append(
                     `
                         <div onclick="selectBlog('${item.title}')" class="row sub-blog-tab">
-                            <a>${item.pubDate}</a>
+                            <a>${item.published}</a>
                             <h5>${item.title}</h5>
                         </div>
                     `
@@ -52,4 +52,10 @@ $(document).ready(function(){
 
 function selectBlog(title) {
     console.log(title)
+    blog_data.items.forEach(item => {
+        if (item.title == title) {
+            $('#main-blog-title').text(item.title)
+            $('#main-blog-content').html(item.content)
+        }
+    })
 }
