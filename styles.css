@@ -53,8 +53,8 @@ h1, h5 {
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 .active-icon:hover {
@@ -104,20 +104,19 @@ h1, h5 {
     /* margin: 0, 20px, 0, 20px; */
 }
 
+/* Sign up */
+
 /* Blogs */
 
 .blog-all {
     border: solid 3px;
-    height: 500px;
-    max-height: 80vh;
+    height: 50vh;
     overflow: hidden;
 }
 
 .main-blog-holder {
     border: solid 3px;
-    height: 100%;
-    min-width: 80%;
-    padding: 50px;
+    height: 60vh;
     overflow: scroll;
 }
 
@@ -132,4 +131,9 @@ h1, h5 {
     min-height: 100px;
     min-width: 100%;
 }
+
+.blog-date {
+    font-size: small;
+}
+
 

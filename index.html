@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Shrikhand&display=swap" rel="stylesheet">  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="build/dist/jquery.jfeed.pack.js"></script>
     <link rel="stylesheet" href="styles.css?v=1.0">
 
 </head>
@@ -20,14 +19,24 @@
 <body class ="purple-background">
     
     <!-- navbar -->
-    <nav class="container-fluid sticky-top purple-background py-3" height="100px">
-        <div class="row align-items-center">
+    <nav id="nav-bar" class="container-fluid sticky-top purple-background py-md-3 py-1" height="100px">
+        <div class="row justify-content-between" >
+
             <!-- logo -->
-            <div class="col-sm-1 ml-3 navbar-brand">
+            <div class="col ml-3 d-flex align-items-center">
                 <img  width="80px" height="auto" src="logo.png">
             </div>
+            
+            <!-- social links -->
+            <div class="col order-sm-3 d-flex align-items-center justify-content-between mr-3">
+                <a href="#"><img class="invert active-icon icon" src="facebook.png"></a>
+                <a href="#"><img class="invert active-icon icon" src="insta.png"></a>
+                <a href="#"><img class="invert active-icon icon" src="pintrest.png"></a>
+                <a href="#"><img class="invert active-icon icon" src="whatsapp.png"></a>
+            </div>
+
             <!-- nav links -->
-            <div class="col">
+            <div class="col-sm-6 order-sm-2 d-flex align-items-center">
                 <ul class="nav justify-content-start">
                     <li class="nav-item">
                         <a class="nav-link text-light" href="#about" >About D2R</a>
@@ -43,38 +52,47 @@
                     </li>
                 </ul>
             </div>
-            <!-- social links -->
-            <div class="col-sm-2 d-flex align-items-center justify-content-between mr-3">
-                <a href="#"><img class="invert active-icon icon" src="facebook.png"></a>
-                <a href="#"><img class="invert active-icon icon" src="insta.png"></a>
-                <a href="#"><img class="invert active-icon icon" src="pintrest.png"></a>
-                <a href="#"><img class="invert active-icon icon" src="whatsapp.png"></a>
-            </div>
         </div>
     </nav>
 
-    <div id="about" class="background-image-all background-image"></div>
+    <div class="background-image-all background-image"></div>
 
-    <div class="container-fluid box section-cards p-5">
+    <div id="about" class="container-fluid box section-cards p-3 p-md-5">
         <div class="row justify-content-md-center ">
-            <div class="col">
+            <div class="container-fluid">
                 <h1>What is D2R?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
             </div>
             <div class="col">
-                <h1 class="hidden">|</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
             </div>
+            <!-- <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
+            </div> -->
         </div>
     </div>
 
     <div class="background-image-all background-image1"></div>
 
-    <div id="signup" class="container-fluid box py-5">
+    <div id="blog" class="container-fluid py-3 box section-cards p-md-5">
+        <div class="container justify-content-md-center">
+            <h1>What we're up to now</h1>
+            <!-- <div class="row blog-all"> -->
+                <div id="blog-container" class="container-fluid py-3 main-blog-holder">
+                    <!-- <h5 id="main-blog-title" class="p-3">TITLE</h5>
+                    <p id="main-blog-content" class="p-3"></p> -->
+                </div>
+                <!-- <div id="sub-blog-tabs" class="col-sm sub-blog-holder"></div> -->
+            <!-- </div> -->
+        </div>
+    </div> 
+
+    <div class="background-image-all background-image3"></div>
+
+    <div id="signup" class="container-fluid box p-md-5 d-flex align-items-center justify-content-center">
         <div class="row justify-content-center">
-            <div class="col-md-5">
+            <div class="col-sm-12 py-3">
                 <h1>Keep up</h1> 
                 <p>Get the latest D2R news and keep up to date with our progress on Kickstarter</p>
                 <!-- <form action="#" class="col-xs-4 form-inline" width="500px">
@@ -91,27 +109,10 @@
                     </div>
                 </form>
             </div>
-
         </div>
     </div>
 
     <div class="background-image-all background-image2"></div>
-
-    <div id="blog" class="container-fluid p-5 box section-cards">
-        <div class="container justify-content-md-center">
-            <h1>What we're up to now</h1>
-            <div class="row blog-all">
-                <div class="col main-blog-holder">
-                    <h5 id="main-blog-title" class="p-3">TITLE</h5>
-                    <p id="main-blog-content" class="p-3"></p>
-                </div>
-                <div id="sub-blog-tabs" class="col sub-blog-holder">
-                </div>
-            </div>
-        </div>
-    </div> 
-
-    <div class="background-image-all background-image3"></div>
 
     <!-- <div id="contact" class="container-fluid section-cards py-5">
         <div class="container justify-content-md-center mt-5">
@@ -125,45 +126,36 @@
     <!-- <div class="background-image-small background-image4"></div> -->
 
     <!-- Footer -->
-    <footer class="container-fluid page-footer">
+    <footer id="contact" class="container-fluid page-footer">
 
-        <div class="container p-5">
+        <div class="container px-md-5 px-3 pt-md-5 pt-3 pb-md-2">
             <div class="row">
-                <div class="col">
+                <div class="col-md-8">
                     <h5 class="text-uppercase font-weight-bold">Wanna get in touch with D2R?</h5>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
                         repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
                         harum esse fugiat. Itaque, culpa?</p>
                 </div>
-
-                <div class="col-sm-2">
-                    <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-                    <p>Lorem ipsum dolor sit, amet </p>
-                </div>
-
-                <div class="col-sm-2">
-                    <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-                    <p>Lorem ipsum dolor sit, amet </p>
-                </div>
             </div>
                 <hr color="white">
 
             <div class="row justify-content-between">
-                <p class="pl-3">© 2020 Copyright:
-                    <a href="https://www.penisland.com"> Ronnie Cowl</a>
-                </p>
-                <div class="col-sm-2 d-flex align-items-center justify-content-between mr-3">
+                <div class="col-md-4 order-sm-2 mb-3 mb-md-0 d-flex align-items-center justify-content-between mr-3">
                     <a href="#"><img class="invert active-icon icon" src="facebook.png"></a>
                     <a href="#"><img class="invert active-icon icon" src="insta.png"></a>
                     <a href="#"><img class="invert active-icon icon" src="pintrest.png"></a>
                     <a href="#"><img class="invert active-icon icon" src="whatsapp.png"></a>
                 </div>
+
+                <div class="col col-md-4 order-sm-1 d-flex justify-content-center">
+                    <p class="pl-3">© 2020 Copyright:
+                        <a href="https://www.penisland.com"> Ronnie Cowl</a>
+                    </p>
+                </div>
+
             </div>
             
         </div>
-
-
-
     </footer>
 
   <script src="scripts.js"></script>
