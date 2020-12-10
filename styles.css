@@ -31,6 +31,12 @@
     color: white;
 }
 
+.no-background {
+    background-color: transparent;
+    /* background-color: rgb(47, 24, 54);  <-- original color */
+    color: white;
+}
+
 .invert { 
     filter: invert(90%); 
 }
@@ -41,11 +47,6 @@ p {
 
 h1, h5 {
     font-family: 'Shrikhand', cursive;
-}
-
-.hidden {
-    opacity: 0;
-    cursor: default;
 }
 
 .box {
@@ -105,24 +106,47 @@ h1, h5 {
 }
 
 /* Sign up */
+.twitter-box {
+    height: 300px;
+    overflow: scroll;
+}
+
+.twitter-timeline {
+    width: 500px;
+}
 
 /* Blogs */
 
+.transparent {
+    opacity: 1;
+}
+
+.blog-box {
+    min-height: 500px;
+}
+
+.blog-container {
+    min-height: 100vh;
+}
+
 .blog-all {
-    border: solid 3px;
-    height: 50vh;
+    /* border: solid 3px; */
     overflow: hidden;
 }
 
+.blog-select {
+    cursor: default;
+}
+
 .main-blog-holder {
-    border: solid 3px;
-    height: 60vh;
+    /* border-right: solid 3px; */
+    max-height: 700px;
     overflow: scroll;
 }
 
 .sub-blog-holder {
     overflow: scroll;
-    height: 100%;
+    max-height: 700px;
     cursor: default;
 }
 
