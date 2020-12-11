@@ -2,7 +2,7 @@ var blog_data = {}
 const appendLeadingZeroes = (n) => n <= 9 ? "0" + n : n
 
 $(document).ready(function(){
-
+        console.log($( window ).height(), $("#landing-content").height(), $("#landing-signup").height())
        $('body').on('click','a[href^="#"]',function(event){
             event.preventDefault();
             var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
@@ -14,9 +14,17 @@ $(document).ready(function(){
         $(function () {
             $(document).scroll(function () {
               var $nav = $(".navbar-fixed-top");
-              $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+              $nav.toggleClass('scrolled', $(this).scrollTop() > $( window ).height() - $("#landing-content").height() - $("#landing-signup").height() - 200);
+              //$nav.toggleClass('scrolled', $(this).scrollTop() > $( window ).height() - $nav.height());
             });
         });
+
+        // $(function () {
+        //     $(document).scroll(function () {
+        //       var $nav = $(".navbar-fixed-top");
+        //       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        //     });
+        // });
 
         // API to Integrate Blog
         var API_KEY = "AIzaSyBWqd6wzwcFgKaxC5BkNLYReXsZZqmUkk8"

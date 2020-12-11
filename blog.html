@@ -8,22 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Drags2Riches">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- JQ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Shrikhand&display=swap" rel="stylesheet">  
+
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css?v=1.0">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Shrikhand&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
 
 </head>
 
-<body>
+<body class="background-image-all background-image" style="margin-top: -75px;"></body>
     
     <!-- navbar -->
-    <nav id="nav-bar" class="purple-background container-fluid sticky-top purple-background py-md-3 py-1" height="100px">
-        
+    <nav id="nav-bar" class="navbar-fixed-top container-fluid sticky-top py-md-3 py-1" height="100px">
         <div class="row justify-content-between" >
 
             <!-- logo -->
@@ -52,14 +61,15 @@
                         <a class="nav-link text-light" href="index.html#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#blog">Blog</a>
+                        <a class="nav-link text-light" href="blog.html">Blog</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="background-image background-image-small d-flex justify-content-center">
+    <div class="mt-5 d-flex justify-content-center">
+    <!-- <div class="background-image background-image-small d-flex justify-content-center"> -->
         <div id="blog" class="container blog-container row purple-background my-5 py-3 p-md-5">
             <!-- Title -->
             <div class="col-md-12 col-8 order-sm-1">
@@ -139,7 +149,8 @@
         </div>
     </footer>
 
-  <script src="scripts.js"></script>  
-
+  <script src="blog-scripts.js"></script>  
+  <!-- <script src="scripts.js"></script> -->
+  
 </body>
 </html>

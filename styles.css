@@ -73,7 +73,11 @@ h1, h5 {
 
 .navbar-fixed-top.scrolled {
     background-color: rgb(67, 24, 54) !important;
-    transition: background-color 200ms linear;
+    transition: background-color 400ms linear;
+}
+
+.navbar-fixed-top {
+    transition: background-color 400ms linear;
 }
 
 .background-image-small {
