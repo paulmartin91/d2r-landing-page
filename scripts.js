@@ -11,6 +11,13 @@ $(document).ready(function(){
             $('html, body').animate({scrollTop:target_offset - customoffset}, 500);
         });
 
+        $(function () {
+            $(document).scroll(function () {
+              var $nav = $(".navbar-fixed-top");
+              $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+
         // API to Integrate Blog
         var API_KEY = "AIzaSyBWqd6wzwcFgKaxC5BkNLYReXsZZqmUkk8"
         var bloggerID = "4759296590722902555" //"2399953" // "1330659412086602715" //
