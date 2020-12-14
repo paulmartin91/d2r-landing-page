@@ -50,7 +50,7 @@ h1, h5 {
 }
 
 .box {
-    min-height: 50vh;
+    min-height: 70vh;
 }
 
 .icon {
@@ -63,7 +63,7 @@ h1, h5 {
     transition: 0.1s;
 }
 
-.background-image-all {
+.background-image-main {
     min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -80,8 +80,8 @@ h1, h5 {
     transition: background-color 400ms linear;
 }
 
-.background-image-small {
-    min-height: 20vh;
+.background-image-mid {
+    min-height: 50vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
