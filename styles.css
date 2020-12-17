@@ -31,6 +31,12 @@
     color: white;
 }
 
+.no-background {
+    background-color: transparent;
+    /* background-color: rgb(47, 24, 54);  <-- original color */
+    color: white;
+}
+
 .invert { 
     filter: invert(90%); 
 }
@@ -43,13 +49,8 @@ h1, h5 {
     font-family: 'Shrikhand', cursive;
 }
 
-.hidden {
-    opacity: 0;
-    cursor: default;
-}
-
 .box {
-    min-height: 50vh;
+    min-height: 70vh;
 }
 
 .icon {
@@ -62,16 +63,25 @@ h1, h5 {
     transition: 0.1s;
 }
 
-.background-image-all {
-    min-height: 50vh;
+.background-image-main {
+    min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.background-image-small {
-    min-height: 20vh;
+.navbar-fixed-top.scrolled {
+    background-color: rgb(67, 24, 54) !important;
+    transition: background-color 400ms linear;
+}
+
+.navbar-fixed-top {
+    transition: background-color 400ms linear;
+}
+
+.background-image-mid {
+    min-height: 50vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,24 +115,47 @@ h1, h5 {
 }
 
 /* Sign up */
+.twitter-box {
+    height: 300px;
+    overflow: scroll;
+}
+
+.twitter-timeline {
+    width: 500px;
+}
 
 /* Blogs */
 
+.transparent {
+    opacity: 1;
+}
+
+.blog-box {
+    min-height: 500px;
+}
+
+.blog-container {
+    min-height: 100vh;
+}
+
 .blog-all {
-    border: solid 3px;
-    height: 50vh;
+    /* border: solid 3px; */
     overflow: hidden;
 }
 
+.blog-select {
+    cursor: default;
+}
+
 .main-blog-holder {
-    border: solid 3px;
-    height: 60vh;
+    /* border-right: solid 3px; */
+    max-height: 700px;
     overflow: scroll;
 }
 
 .sub-blog-holder {
     overflow: scroll;
-    height: 100%;
+    max-height: 700px;
     cursor: default;
 }
 

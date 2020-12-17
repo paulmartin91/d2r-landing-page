@@ -11,24 +11,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Shrikhand&display=swap" rel="stylesheet">  
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css?v=1.0">
 
 </head>
 
-<body class ="purple-background">
+<body class="background-image-main background-image" style="margin-top: -75px;">
     
     <!-- navbar -->
-    <nav id="nav-bar" class="container-fluid sticky-top purple-background py-md-3 py-1" height="100px">
-        <div class="row justify-content-between" >
+    <nav id="nav-bar" class="navbar-fixed-top container-fluid sticky-top py-md-3 py-1" height="100px">
+        <div class="row justify-content-between no-gutters" >
 
             <!-- logo -->
-            <div class="col ml-3 d-flex align-items-center">
+            <div class="col-1 ml-3 d-flex align-items-center">
                 <img  width="80px" height="auto" src="logo.png">
             </div>
             
             <!-- social links -->
-            <div class="col order-sm-3 d-flex align-items-center justify-content-between mr-3">
+            <div class="col-md-3 col-sm-4 col-6 order-md-3 d-flex align-items-center justify-content-between mr-3">
                 <a href="#"><img class="invert active-icon icon" src="facebook.png"></a>
                 <a href="#"><img class="invert active-icon icon" src="insta.png"></a>
                 <a href="#"><img class="invert active-icon icon" src="pintrest.png"></a>
@@ -36,35 +37,63 @@
             </div>
 
             <!-- nav links -->
-            <div class="col-sm-6 order-sm-2 d-flex align-items-center">
+            <div class="col-md-6 order-md-2 d-flex align-items-center">
                 <ul class="nav justify-content-start">
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#about" >About D2R</a>
+                        <a class="nav-link text-light" href="#about" >About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#blog">Blog</a>
+                        <a class="nav-link text-light" href="#how-to-play">How to play</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#signup">Sign up!</a>
-                    </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link text-light" href="#contact">Contact</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="blog.html">Blog</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="background-image-all background-image"></div>
+    <div id="about" class="background-image-main text-white d-flex justify-content-between flex-column">
 
-    <div id="about" class="container-fluid box section-cards p-3 p-md-5">
+        <div class="col d-flex justify-content-end flex-column">
+            <div id="landing-content" class="col-sm-7 py-3">
+                <h1>Drags 2 Riches</h1>
+                <h5>2-4 Players</h5>
+                <h5>Deck Building</h5>
+                <h5>Age 4+</h5>
+            </div>
+            
+            <div id="landing-signup" class="col-sm-5 py-3">
+                <div>
+                    <h5>Keep up with our progress on Kickstarter</h5> 
+                    <!-- <form action="#" class="col-xs-4 form-inline" width="500px">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email">
+                        <div className="input-group-append">
+                            <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form> -->
+                    <form class="input-group mb-3">
+                        <input class="form-control" placeholder="email address" required >
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">Sign me up!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="purple-background container-fluid box section-cards p-3 p-md-5">
         <div class="row justify-content-md-center ">
             <div class="container-fluid">
                 <h1>What is D2R?</h1>
             </div>
             <div class="col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
+                <p>Drags 2 Riches is a 2-4 player deck-building game where you get to live out your drag queen truth. Players will build their outfit collection over the rounds, each turn rifling through their wardrobes to lay down the realest looks and win more fame than those other busted queens. How you win is up to you. Will you play a new look every turn, hoping to claim the circuit through persistence and hard work? Or will you take your time and build your look over several rounds, saving the big reveal for an extravaganza worth your time? Whatever you decide, be careful hunty, because only the queen with fiercest look will take home the prize.</p>
             </div>
             <!-- <div class="col">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
@@ -73,46 +102,24 @@
         </div>
     </div>
 
-    <div class="background-image-all background-image1"></div>
+    <div class="background-image-mid background-image1"></div>
 
-    <div id="blog" class="container-fluid py-3 box section-cards p-md-5">
-        <div class="container justify-content-md-center">
-            <h1>What we're up to now</h1>
-            <!-- <div class="row blog-all"> -->
-                <div id="blog-container" class="container-fluid py-3 main-blog-holder">
-                    <!-- <h5 id="main-blog-title" class="p-3">TITLE</h5>
-                    <p id="main-blog-content" class="p-3"></p> -->
-                </div>
-                <!-- <div id="sub-blog-tabs" class="col-sm sub-blog-holder"></div> -->
-            <!-- </div> -->
-        </div>
-    </div> 
-
-    <div class="background-image-all background-image3"></div>
-
-    <div id="signup" class="container-fluid box p-md-5 d-flex align-items-center justify-content-center">
-        <div class="row justify-content-center">
-            <div class="col-sm-12 py-3">
-                <h1>Keep up</h1> 
-                <p>Get the latest D2R news and keep up to date with our progress on Kickstarter</p>
-                <!-- <form action="#" class="col-xs-4 form-inline" width="500px">
-                        <label for="email">Email address:</label>
-                        <input type="email" class="form-control" id="email">
-                    <div className="input-group-append">
-                        <button type="button" class="btn btn-primary">Submit</button>
-                    </div>
-                </form> -->
-                <form class="input-group mb-3">
-                    <input class="form-control" placeholder="email address" required >
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="submit">Sign me up!</button>
-                    </div>
-                </form>
+    <div id="how-to-play" class="purple-background container-fluid box section-cards p-3 p-md-5">
+        <div class="row justify-content-md-center ">
+            <div class="container-fluid">
+                <h1>How to play</h1>
             </div>
+            <div class="col">
+                <p>Drags 2 Riches is a 2-4 player deck-building game where you get to live out your drag queen truth. Players will build their outfit collection over the rounds, each turn rifling through their wardrobes to lay down the realest looks and win more fame than those other busted queens. How you win is up to you. Will you play a new look every turn, hoping to claim the circuit through persistence and hard work? Or will you take your time and build your look over several rounds, saving the big reveal for an extravaganza worth your time? Whatever you decide, be careful hunty, because only the queen with fiercest look will take home the prize.</p>
+            </div>
+            <!-- <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam felis ut urna vestibulum, et vestibulum massa ultrices. Cras eget arcu magna. Etiam posuere, enim eu pulvinar fermentum, elit ante condimentum lacus, sit amet tempor lorem nisl ac nibh. Donec et blandit purus. Etiam ultrices metus vitae eros faucibus, in rutrum ex dignissim. Aenean tristique, dolor nec facilisis feugiat, diam sapien luctus leo, at pretium est augue semper ipsum. In purus erat, luctus sed pulvinar bibendum, gravida et nulla.</p>
+            </div> -->
         </div>
     </div>
 
-    <div class="background-image-all background-image2"></div>
+    <div class="background-image-mid background-image2"></div>
 
     <!-- <div id="contact" class="container-fluid section-cards py-5">
         <div class="container justify-content-md-center mt-5">
@@ -126,7 +133,7 @@
     <!-- <div class="background-image-small background-image4"></div> -->
 
     <!-- Footer -->
-    <footer id="contact" class="container-fluid page-footer">
+    <footer id="contact" class="purple-background container-fluid page-footer">
 
         <div class="container px-md-5 px-3 pt-md-5 pt-3 pb-md-2">
             <div class="row">
@@ -159,7 +166,6 @@
     </footer>
 
   <script src="scripts.js"></script>
-  <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>    
 
 </body>
 </html>
