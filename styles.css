@@ -1,44 +1,9 @@
-/* .color-theme-orange {
-    background-color: rgb(243, 168, 59);
-}
-
-.color-theme-red {
-    color: rgb(235, 50, 35);
-} */
-
-/* .pride-red {
-
-}
-.pride-orange {
-    
-}
-.pride-yellow {
-    
-}
-.pride-green {
-    
-}
-.pride-blue {
-    
-}
-.pride-purple {
-    
-} */
+/* BODY */
 
 .purple-background {
     background-color: rgb(67, 24, 54);
     /* background-color: rgb(47, 24, 54);  <-- original color */
     color: white;
-}
-
-.no-background {
-    background-color: transparent;
-    /* background-color: rgb(47, 24, 54);  <-- original color */
-    color: white;
-}
-
-.invert { 
-    filter: invert(90%); 
 }
 
 p {
@@ -49,9 +14,55 @@ h1, h5 {
     font-family: 'Shrikhand', cursive;
 }
 
-.box {
-    min-height: 70vh;
+
+/* CONTENT CONTAINERS */
+
+.lg-box {
+    min-height: 65vh;
 }
+
+.md-box {
+    min-height: 35vh;
+}
+
+.lg-background-image {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.md-background-image {
+    min-height: 65vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* BACKGROUND IMAGES */
+.background-image1 {
+    background-image: url("dq1.jpg");
+}
+.background-image2{
+    background-image: url("dq2.png");
+}
+.background-image3 {
+    background-image: url("dq3.png");
+}
+.background-image4 {
+    background-image: url("dq4.png");
+}
+.background-image5 {
+    background-image: url("dq5.jpg");
+}
+.background-image6 {
+    background-image: url("dq6.jpg");
+}
+
+
+/* HEADER */
 
 .icon {
     width: 25px;
@@ -63,12 +74,8 @@ h1, h5 {
     transition: 0.1s;
 }
 
-.background-image-main {
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.invert { 
+    filter: invert(90%); 
 }
 
 .navbar-fixed-top.scrolled {
@@ -80,30 +87,8 @@ h1, h5 {
     transition: background-color 400ms linear;
 }
 
-.background-image-mid {
-    min-height: 50vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.background-image {
-    background-image: url("dq1.jpg");
-}
-.background-image1{
-    background-image: url("dq2.png");
-}
-.background-image2 {
-    background-image: url("dq3.jpg");
-}
-.background-image3 {
-    background-image: url("dq4.png");
-}
-
-.background-image4 {
-    background-image: url("dq3.jpg");
-}
+/* FOOTER */
 
 .footer {
     background-color: red;
@@ -114,17 +99,8 @@ h1, h5 {
     /* margin: 0, 20px, 0, 20px; */
 }
 
-/* Sign up */
-.twitter-box {
-    height: 300px;
-    overflow: scroll;
-}
 
-.twitter-timeline {
-    width: 500px;
-}
-
-/* Blogs */
+/* Blog */
 
 .transparent {
     opacity: 1;
@@ -170,3 +146,188 @@ h1, h5 {
 }
 
 
+/* OLD */
+
+/* .color-theme-orange {
+    background-color: rgb(243, 168, 59);
+}
+
+.color-theme-red {
+    color: rgb(235, 50, 35);
+} */
+
+/* .pride-red {
+
+}
+.pride-orange {
+    
+}
+.pride-yellow {
+    
+}
+.pride-green {
+    
+}
+.pride-blue {
+    
+}
+.pride-purple {
+    
+}
+
+.purple-background {
+    background-color: rgb(67, 24, 54);
+
+    color: white;
+}
+
+.invert { 
+    filter: invert(90%); 
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h5 {
+    font-family: 'Shrikhand', cursive;
+}
+
+
+
+.lg-box {
+    min-height: 65vh;
+}
+
+.md-box {
+    min-height: 35vh;
+}
+
+.lg-background-image {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.md-background-image {
+    min-height: 65vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.background-image {
+    background-image: url("dq1.jpg");
+}
+.background-image1{
+    background-image: url("dq2.png");
+}
+.background-image2 {
+    background-image: url("dq3.jpg");
+}
+.background-image3 {
+    background-image: url("dq4.png");
+}
+.background-image4 {
+    background-image: url("dq3.jpg");
+}
+
+
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.active-icon:hover {
+    opacity: 0.8;
+    transition: 0.1s;
+}
+
+.background-image-main {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: rgb(67, 24, 54) !important;
+    transition: background-color 400ms linear;
+}
+
+.navbar-fixed-top {
+    transition: background-color 400ms linear;
+}
+
+
+.footer {
+    background-color: red;
+}
+
+.footer-hr {
+    color: white;
+
+}
+
+
+.twitter-box {
+    height: 300px;
+    overflow: scroll;
+}
+
+.twitter-timeline {
+    width: 500px;
+}
+
+
+
+.transparent {
+    opacity: 1;
+}
+
+.blog-box {
+    min-height: 500px;
+}
+
+.blog-container {
+    min-height: 100vh;
+}
+
+.blog-all {
+
+    overflow: hidden;
+}
+
+.blog-select {
+    cursor: default;
+}
+
+.main-blog-holder {
+
+    max-height: 700px;
+    overflow: scroll;
+}
+
+.sub-blog-holder {
+    overflow: scroll;
+    max-height: 700px;
+    cursor: default;
+}
+
+.sub-blog-tab {
+    border: solid 3px;
+    min-height: 100px;
+    min-width: 100%;
+}
+
+.blog-date {
+    font-size: small;
+}
+
+*/
