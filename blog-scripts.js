@@ -60,17 +60,17 @@ $(document).ready(function(){
                 // </div>
                 // `
                 `
-                <li onclick="selectBlog('${item.title}')" data-toggle="collapse" data-target="#navbarSupportedContent" class="list-group-item list-group-item-action" style="max-width: 18rem; color: black">
+                <li onclick="selectBlog('${item.title}')" data-toggle="collapse" data-target="#navbarSupportedContent" class="list-group-item list-group-item-action" style="color: black">
                     <span class="card-subtitle">  ${formatted_date}</span>
-                    <p class="card-title">${item.title}</p>
+                    <p class="h6">${item.title}</p>
                 </li>
                 `
             )
             $('#sub-blog-tabs-expanded').append(
                 `
-                <li onclick="selectBlog('${item.title}')" class="list-group-item list-group-item-action" style="max-width: 18rem; color: black">
+                <li onclick="selectBlog('${item.title}')" data-toggle="collapse" data-target="#navbarSupportedContent" class="list-group-item list-group-item-action" style="color: black">
                     <span class="card-subtitle">  ${formatted_date}</span>
-                    <p class="card-title">${item.title}</p>
+                    <p class="h6">${item.title}</p>
                 </li>
                 `
             )
